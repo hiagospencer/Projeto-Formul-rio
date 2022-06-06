@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    
+    <form id="form">
+        <h1>Formulário</h1>
+        <fieldset id="fild1">
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome"  placeholder="Digite seu Nome..." size="20" maxlength="25" required><br><br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome..." size="20" maxlength="25" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu Email..." size="20" maxlength="25" required><br><br>
+            <label>Sexo:</label>
+            <input type="radio" name="sexo" id="masc" checked> <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem" ><label for="fem">Feminino</label>
+        </fieldset>
+
+        <fieldset id="fild2">
+            <legend>Dados Profissionais</legend>
+            <label>Escolaridade</label><br><br>
+            <select>
+                <option value="ef">Ensino Fundamental Completo</option>
+                <option value="em">Ensino Médio Incompleto</option>
+                <option value="em1">Ensino Médio Completo</option>
+                <option value="nt">Nível Técnico</option>
+                <option value="ns">Nível Superior</option>
+            </select>
+            <br><br><label>Natureza do Cargo</label><br>
+            <input type="radio" name="gere" id="gere" checked> <label for="gere">Gerência</label>
+            <input type="radio" name="gere" id="fin"> <label for="fin">Financeiro</label>
+            <input type="radio" name="gere" id="recep"> <label for="recep">Recepção</label>
+            <input type="radio" name="gere" id="adm"> <label for="adm">Administração</label>
+            <input type="radio" name="gere" id="juri"> <label for="juri">Jurídico</label>
+
+            <br><br><label>Área de interesse</label><br>
+            <input type="checkbox" name="area" id="comp"> <label for="comp">Computação</label>
+            <input type="checkbox" name="area" id="bio"> <label for="bio">Biologia</label>
+            <input type="checkbox" name="area" id="mamb"> <label for="mamb">Meio Ambiente</label>
+            <input type="checkbox" name="area" id="eng"> <label for="eng">Engenharia</label>
+            <input type="checkbox" name="area" id="hst"> <label for="hst">História</label>
+
+            <br><br><label>Mini-Curriculo</label>
+            <textarea ></textarea>
+
+        </fieldset>
+       <div id="butao">
+        <input type="submit" value="enviar" name="enviar" id="enviar">
+        <input type="reset" value="reset" name="reset" id="reset">
+    </div>
+    </form>
+</body>
+</html>
