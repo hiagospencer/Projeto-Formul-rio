@@ -7,12 +7,13 @@ body{
     
 }
 
+/* Formatação do formulário */
  
 form {
     display: block;
     border: 1px solid black;
     background-color: white;
-    max-height:89% ;
+    max-height:100% ;
     width: 45%;
     padding: 27px;
     position: absolute;
@@ -22,10 +23,12 @@ form {
     
 }
 
+/* Formatação dos Botões*/
+
 div#butao{
     position: relative;
     left: 25px;
-    bottom: 0;
+    bottom: 10px;
 }
 #enviar:hover{
     background-color: #606060;
@@ -39,11 +42,16 @@ div#butao{
     cursor: pointer;
     opacity: 0.7;
 }
+
+/* Dados Profissionais */
+
 #fild1 {
         padding: 20px;
         margin: 20px;
         
 }
+
+/* Dados Pessoais*/
 
 #fild2{
     padding: 20px;
